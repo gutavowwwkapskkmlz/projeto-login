@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
     <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-query.css">
   </head>
   <body>
     <main>
       <section id="login">
         <div id="imagem"></div>
-        <div id="formlualrio">
+        <div id="formulario">
           <h1>login</h1>
           <p>
             seja cem-vunda a novamente. Faça login para acessar sua conta e
             poder fazer as configurações no seu ambiente.
           </p>
           <form action="login.php" method="post">
-            <label for="login" name="ilogin" id="login">Faça seu login abaixo</label>
-
-            <input type="email" name="ilogin" id="login" value="">
-            <input type="password" name="ilogin" id="login" value="">
+         
+            <div class="campo">
+            
+              <input type="email" name="login" id="ilogin" placeholder="seu email">
+           <label for="ilogin">login</label>
+            </div>  
+            <div class="campo">
+             
+              <input type="password" name="senha" id="isenha" id="isenha" placeholder="senha">
+               <label for="isenha"> senha</label>
+            </div>
             <input type="submit" value="confirmar">
           </form>
         </div>
